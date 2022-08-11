@@ -14,7 +14,7 @@ div img {
     width: 150px;
 }
 
-.login {
+.login-input {
     margin-top: 15px;
     margin-bottom: 5px;
     border: 2px solid black;
@@ -26,7 +26,7 @@ div img {
     width: 100%;
 }
 
-.button-play {
+.login-button {
     color: black;
     max-width: 300px;
     padding: 10px;
@@ -37,6 +37,10 @@ div img {
     padding: 10px;
 }
 
-button {
+.login-button {
     cursor: pointer;
+}
+
+.login-button:disabled {
+    background-color: rgb(150, 150, 150);
 }
