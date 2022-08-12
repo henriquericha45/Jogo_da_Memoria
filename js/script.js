@@ -25,23 +25,12 @@ const input = document.querySelector('.login-input');
 const button = document.querySelector('.login-button');
 const form = document.querySelector('.login-form');
 
-const validarInput = ({target}) => {
-    if(target!=""){
-        console.log('foi');
-        button.removeAttribute('disabled', '');
-        return;
-    }
-    button.setAttribute('disable', '');
-}
-
-input.addEventListener('button', validarInput);
 
 function valida(){
-    document.getElementsByClassName('login-button').disabled = true;
-    if(document.getElementsByClassName('login-input').value != ""){
-        document.getElementsByClassName('login-button').disabled = false;
-
+    
+    if(input.value.length > 0){
+        button.removeAttribute('disabled');
     }else{
-        console.log('erro');
+        button.setAttribute('disabled','true');
     }
 }
